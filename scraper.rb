@@ -30,5 +30,4 @@ jp_pr = EveryPolitician::Wikidata.wikipedia_xpath(
 jp = (jp_constituency + jp_pr).uniq
 
 EveryPolitician::Wikidata.scrape_wikidata(names: { en: en, de: de, ja: jp }, output: false)
-warn EveryPolitician::Wikidata.notify_rebuilder
 
