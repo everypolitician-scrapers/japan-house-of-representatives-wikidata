@@ -4,9 +4,9 @@
 require 'wikidata/fetcher'
 
 en = EveryPolitician::Wikidata.wikipedia_xpath( 
-  url: 'https://en.wikipedia.org/wiki/Representatives_elected_in_the_Japanese_general_election,_2012',
+  url: 'https://en.wikipedia.org/wiki/List_of_members_of_the_House_of_Representatives_of_Japan,_2012-14',
   xpath: '//table[.//th[contains(.,"Elected Member")]]//tr//td[2]//a[not(@class="new")][1]/@title',
-) 
+)
 
 de = EveryPolitician::Wikidata.wikipedia_xpath( 
   url: 'https://de.wikipedia.org/wiki/Liste_der_Mitglieder_des_Sh%C5%ABgiin_(46._Wahlperiode)',
